@@ -1,7 +1,6 @@
 const express = require("express");
 const router = express.Router();
 const bankingController = require("../controller/banking.controller");
-router.post("/approved", bankingController.approved);
 router.post("/loanApplyDetails", bankingController.getLoanApplyDetails);
 router.post(
   "/approvalPendingLoanDetails",
